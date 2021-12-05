@@ -1,6 +1,7 @@
 package com.xpl0s.rubymod.item;
 
 import com.xpl0s.rubymod.RubyMod;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -30,6 +31,22 @@ public class ModItems {
 
     public static final RegistryObject<Item> RUBY_HOE = ITEMS.register("ruby_hoe",
             () -> new HoeItem(ModTiers.RUBY, -2, -1f, new Item.Properties().tab(CreativeModeTab.TAB_TOOLS))); //ruby hoe
+
+    public static final RegistryObject<Item> RUBY_BOOTS = ITEMS.register("ruby_boots",
+            () -> new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlot.FEET,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))); //ruby boots
+
+    public static final RegistryObject<Item> RUBY_LEGGINGS = ITEMS.register("ruby_leggings",
+            () -> new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlot.LEGS,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))); //ruby leggings
+
+    public static final RegistryObject<Item> RUBY_CHESTPLATE = ITEMS.register("ruby_chestplate",
+            () -> new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlot.CHEST,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))); //ruby chestplate
+
+    public static final RegistryObject<Item> RUBY_HELMET = ITEMS.register("ruby_helmet",
+            () -> new ArmorItem(ModArmorMaterial.RUBY, EquipmentSlot.HEAD,
+                    new Item.Properties().tab(CreativeModeTab.TAB_COMBAT))); //ruby helmet
 
     //Items End Here
 
